@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Registration</title>
+    <style>
+        .karachi{
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .dubai{
+            text-align: center;
+            color: blue;
+        }
+        .multan{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="dubai">Superhero Registration System</h1>
+    
+    <!-- Login Form -->
+    <form class="karachi">
+        <fieldset>
+            <legend>Login</legend>
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+            
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br><br>
+            
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+
+    <br>
+    
+    <!-- Superhero Profile Form -->
+    <form  class="karachi">
+        <fieldset>
+            <legend>Superhero Profile</legend>
+            <label>Name:</label><br>
+            <input type="text" name="name" required><br><br>
+
+            <label>Alias (Spider Man):</label><br>
+            <input type="text" name="alias" required><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob" required><br><br>
+
+            <label>Hero Type:</label><br>
+            <input type="radio" name="hero-type" value="mutant"> Mutant
+            <input type="radio" name="hero-type" value="alien"> Alien
+            <input type="radio" name="hero-type" value="tech-savvy"> Tech-Savvy
+            <br><br>
+
+            <label>Upload Superhero Logo:</label><br>
+            <input type="file" name="logo" img src="s1.png"><br><br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <br>
+    
+    <!-- Superpowers & Abilities Form -->
+    <form  class="karachi">
+        <fieldset>
+            <legend>Superpowers & Abilities</legend>
+            <label>Select Powers:</label><br>
+            <input type="checkbox" name="powers" value="strength"> Super Strength
+            <input type="checkbox" name="powers" value="invisibility"> Invisibility
+            <input type="checkbox" name="powers" value="flight"> Flight
+            <br><br>
+
+            <label>Choose a Sidekick:</label><br>
+            <select name="sidekick">
+                <option value="robin">Robin</option>
+                <option value="ai-bot">AI Bot</option>
+                <option value="talking-dog">Talking Dog</option>
+            </select><br><br>
+
+            
+            <label>Origin Story:</label><br>
+            <textarea name="origin-story" rows="4"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <br>
+    
+    <!-- Mission Selection Form -->
+    <form  class="karachi">
+        <fieldset>
+            <legend>Mission Selection</legend>
+            <label>Choose a Mission:</label><br>
+            <select name="mission">
+                <option value="rescue">Rescue</option>
+                <option value="space-battle">Space Battle</option>
+                <option value="underwater-quest">Underwater Quest</option>
+            </select><br><br>
+
+            <input type="hidden" name="secret-code" value="SUPER2025">
+
+            <label>Superhero Email:</label><br>
+            <input type="email" name="hero-email" required><br><br>
+
+            <label>Years of Experience:</label><br>
+            <input type="number" name="experience" required><br><br>
+
+            <input class="multan" type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
